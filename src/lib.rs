@@ -1,3 +1,5 @@
+pub mod debug;
+
 ///
 /// ```rust
 /// use asserts_rs::*;
@@ -8,7 +10,7 @@
 /// use asserts_rs::*;
 /// asserts_eq!(1, 1, 1, 2); // panic 1 not equal to 2
 /// ```
-/// 
+///
 #[macro_export]
 macro_rules! asserts_eq {
     ($expresson:expr, $expected:expr) => {
@@ -31,7 +33,7 @@ macro_rules! asserts_eq {
 /// use asserts_rs::*;
 /// asserts_ne!(1, 2, 1, 3); // panic 1 equal to 1
 /// ```
-/// 
+///
 #[macro_export]
 macro_rules! asserts_ne {
     ($expresson:expr, $expected:expr) => {
@@ -54,7 +56,7 @@ macro_rules! asserts_ne {
 /// use asserts_rs::*;
 /// asserts_eq_one_of!(1, 2, 3); // panic 1 is not equals to any of numbers in (2, 3)s
 /// ```
-/// 
+///
 #[macro_export]
 macro_rules! asserts_eq_one_of {
     ($expresson:expr, $expected:expr) => {
@@ -80,7 +82,7 @@ macro_rules! asserts_eq_one_of {
 /// use asserts_rs::*;
 /// asserts_ne_one_of!(1, 1, 1); // panic 1 is equals to all of numbers in (1, 1)
 /// ```
-/// 
+///
 #[macro_export]
 macro_rules! asserts_ne_one_of {
     ($expresson:expr, $expected:expr) => {

@@ -1,6 +1,6 @@
 [package]
 name = "asserts-rs"
-version = "0.2.1"
+version = "0.3.0"
 edition = "2021"
 description = "Asserts utilliy macros for Rust"
 license = "MPL-2.0"
@@ -8,6 +8,7 @@ authors = ["CGQAQ <m.jason.liu@outlook.com>"]
 homepage = "https://github.com/CGQAQ/asserts-rs"
 repository = "https://github.com/CGQAQ/asserts-rs"
 readme = "README.md"
+keywords = ["assert", "asserts", "debug_assert", "debug_asserts", "assertion", "assertions", "debug_asserttions", "debug_assertions", "utility", "utilities"]
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
